@@ -25,7 +25,7 @@ class Triangle
   end
 
   def valid?
-    {@side_a||@side_b||@side_c}.length==0
+    @side_a==0||@side_b==0||@side_c==0
     raise TriangleError
   end
 
