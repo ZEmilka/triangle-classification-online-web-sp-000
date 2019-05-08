@@ -30,10 +30,7 @@ class Triangle
   #end
 
   class TriangleError < StandardError
-    def valid?
-      {@side_a||@side_b||@side_c}.length==0
-      raise TriangleError
-    end
+  
 
   end
 
