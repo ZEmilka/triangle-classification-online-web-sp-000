@@ -26,9 +26,11 @@ class Triangle
 
   def valid?
     if @side_a==0||@side_b==0||@side_c==0
-    raise TriangleError
-    else @side_a.size==0||@@side_b.size==0||@side_c==0
       raise TriangleError
+    elsif @side_a.size==0||@@side_b.size==0||@side_c==0
+      raise TriangleError
+    else
+      true
     end
   end
 
