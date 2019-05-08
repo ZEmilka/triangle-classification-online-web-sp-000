@@ -24,7 +24,13 @@ class Triangle
     end
   end
 
+  def valid?
+    {@side_a||@side_b||@side_c}.length==0
+    raise TriangleError
+  end
+
   class TriangleError < StandardError
+    
   end
 
 
