@@ -29,9 +29,9 @@ class Triangle
     raise TriangleError
   elsif @side_a.size==0||@@side_b.size==0||@side_c==0
     raise TriangleError
-  
-    
-    
+
+
+
   end
 
   class TriangleError < StandardError
